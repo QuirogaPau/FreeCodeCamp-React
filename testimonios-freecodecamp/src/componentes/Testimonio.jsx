@@ -5,15 +5,16 @@ function Testimonio(props) {
   console.log('props', props)
   return (
     <div className= 'contenedor-testimonio'>
-      {<img className='imagen-testimonio' src={props.imagen} alt={props.nombre}  />  }
+     
+      {<img className='imagen-testimonio' src={require(`../imagenes/imagen-${props.imagenTestimonio}.png`)} alt={props.nombreTestimonio}  />  }
       <div className='contenedor-texto-testimonio'>
         <p className='nombre-testimonio pais-testimonio'>
-          <strong>{props.nombre}</strong> en {props.pais}
+          <strong>{props.nombreTestimonio}</strong> en {props.paisTestimonio}
           </p>
-        <p className='cargo-testimonio'>
-          {props.cargos} en <strong>{props.empresa}</strong>
+        <p className='cargo-testimonio empresa-testimonio'>
+          {props.cargosTestimonio} en <strong>{props.empresaTestimonio}</strong>
           </p>
-        <p className='texto-testimonio'>" {props.testimonio} "</p>
+        <p className='texto-testimonio'>" {props.textoTestimonio} "</p>
       </div>
     </div>
   ); 

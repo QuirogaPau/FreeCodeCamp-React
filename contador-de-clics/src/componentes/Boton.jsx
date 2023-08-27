@@ -8,7 +8,7 @@ function Boton({ texto, esBotonDeClic, manejarClic }) {
         onClick={manejarClic}>
         {texto}
       </button>
-    )
+    );
 }
 
 export default Boton;
